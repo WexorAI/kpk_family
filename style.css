@@ -7,7 +7,19 @@
 .member-details-popup {
     white-space: pre-line;
 }
-
+.member-details h5 {
+    font-size: .85rem;
+}
+/* .details{
+    padding-top: 10px;
+    width: 5rem;
+    height: 4rem;
+    background-color: aqua;
+} */
+.card-text{
+    margin: 0;
+    margin-bottom:0;
+}
 /*----------------genealogy-scroll----------*/
 
 .genealogy-scroll::-webkit-scrollbar {

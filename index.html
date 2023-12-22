@@ -1,429 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid container">
+        <h5 class="navbar-brand mx-auto">KPK Family</h5>
+        <h5 data-label="Address" hidden>none</h5>
+        <h5 data-label="Blood" hidden>none</h5>
+        <h5 data-label="Father" hidden>none</h5>
+        <h5 data-label="Mother" hidden>none</h5>
+      </div>
+    </nav>
 
-    <div class="details-box">
-        <h2>Details</h2>
+    <div class="card m-1" style="width: 12rem; height: 12rem ">
+      <div class="card-body details">
+        <h5 class="card-title">Details</h5>
+        <h5 data-label="Address" hidden>none</h5>
+        <h5 data-label="Blood" hidden>none</h5>
+        <h5 data-label="Father" hidden>none</h5>
+        <h5 data-label="Mother" hidden>none</h5>
+
+        <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+
         <div id="member-details"></div>
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      </div>
     </div>
 
-
-<div class="body genealogy-body genealogy-scroll">
-    <div class="genealogy-tree">
+    <div class="body genealogy-body genealogy-scroll">
+      <div class="genealogy-tree">
         <ul>
-            <li>
+          <li>
+            <a href="javascript:void(0);">
+              <div class="member-view-box">
+                <div class="member-image">
+                  <img src="1.png" alt="Member" />
+                  <div class="member-details">
+                    <h5 data-label="Name">Main</h5>
+                    <h5 data-label="Address" hidden>none</h5>
+                    <h5 data-label="Blood" hidden>none</h5>
+                    <h5 data-label="Father" hidden>none</h5>
+                    <h5 data-label="Mother" hidden>none</h5>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <ul class="active">
+              <li>
                 <a href="javascript:void(0);">
-                    <div class="member-view-box">
-                        <div class="member-image">
-                            <img src="1.png" alt="Member">
-                            <div class="member-details">
-                                <h3 data-label="Name">John Doe</h3>
-                            </div>
-                        </div>
+                  <div class="member-view-box">
+                    <!-- <div class="member-view-box" style="padding: 0px 69px;"> -->
+                    <div class="member-image">
+                      <img src="1.png" alt="Member" />
+                      <div class="member-details">
+                        <h5 data-label="Name">Member 1</h5>
+                        <h5 data-label="Address" hidden>none</h5>
+                        <h5 data-label="Blood" hidden>none</h5>
+                        <h5 data-label="Father" hidden>none</h5>
+                        <h5 data-label="Mother" hidden>none</h5>
+                      </div>
                     </div>
-                </a>
-                <ul class="active">
-                    <li>
-                        <a href="javascript:void(0);">
-                            <div class="member-view-box">
-                            <!-- <div class="member-view-box" style="padding: 0px 69px;"> -->
-                                <div class="member-image">
-                                    <img src="1.png" alt="Member">
-                                    <div class="member-details">
-                                        <h3 data-label="Name">Member 1</h3>
-                                        <h3 data-label="Address" hidden>sdsfsdgsfg</h3>
-                                    </div>
-                                </div>
-                                <!-- <div style="position: absolute; top: 0; left: 120px;" class="member-image">
+                    <!-- <div style="position: absolute; top: 0; left: 120px;" class="member-image">
                                     <img src="1.png" >
                                     <div class="member-details">
-                                        <h3 data-label="Name">Member 1's Wife</h3>
+                                        <h5 data-label="Name">Member 1's Wife</h5 >
+                                        <h5 data-label="Address" hidden>none</h5>
+                                        <h5 data-label="Blood" hidden>none</h5>
+                                        <h5 data-label="Father" hidden>none</h5>
+                                        <h5 data-label="Mother" hidden>none</h5>
+                                    
                                     </div>
                                 </div>-->
-                            </div> 
-                        </a>
-                        <ul >
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">Member 1-1</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">Member 1-2</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">Member 1-3</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">Member 1-3-1</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">Member 1-3-2</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">Member 1-3-3</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">Member 1-4</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">Member 1-5</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">Member 1-6</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">Member 1-7</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">Member 1-7-1</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">Member 1-7-2</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <ul>
-                                            <li>
-                                                <a href="javascript:void(0);">
-                                                    <div class="member-view-box">
-                                                        <div class="member-image">
-                                                            <img src="1.png" alt="Member">
-                                                            <div class="member-details">
-                                                                <h3 data-label="Name">Member 1-7-2-1</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">
-                                                    <div class="member-view-box">
-                                                        <div class="member-image">
-                                                            <img src="1.png" alt="Member">
-                                                            <div class="member-details">
-                                                                <h3 data-label="Name">Member 1-7-2-2</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">
-                                                    <div class="member-view-box">
-                                                        <div class="member-image">
-                                                            <img src="1.png" alt="Member">
-                                                            <div class="member-details">
-                                                                <h3 data-label="Name">Member 1-7-2-3</h3>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">Member 1-7-3</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
+                  </div>
+                </a>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">Member 1-1</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">Member 1-2</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">Member 1-3</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <ul>
+                      <li>
                         <a href="javascript:void(0);">
-                            <div class="member-view-box">
-                                <div class="member-image">
-                                    <img src="1.png" alt="Member">
-                                    <div class="member-details">
-                                        <h3 data-label="Name">Member 2</h3>
-                                    </div>
-                                </div>
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">Member 1-3-1</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
                             </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">Member 1-3-2</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">Member 1-3-3</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">Member 1-4</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">Member 1-5</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">Member 1-6</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">Member 1-7</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">Member 1-7-1</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">Member 1-7-2</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
                         </a>
                         <ul>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">John Doe</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                              <ul>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">John Doe</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="member-view-box">
-                                        <div class="member-image">
-                                            <img src="1.png" alt="Member">
-                                            <div class="member-details">
-                                                <h3 data-label="Name">John Doe</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                              <ul>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="member-view-box">
-                                                <div class="member-image">
-                                                    <img src="1.png" alt="Member">
-                                                    <div class="member-details">
-                                                        <h3 data-label="Name">John Doe</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+                          <li>
+                            <a href="javascript:void(0);">
+                              <div class="member-view-box">
+                                <div class="member-image">
+                                  <img src="1.png" alt="Member" />
+                                  <div class="member-details">
+                                    <h5 data-label="Name">Member 1-7-2-1</h5>
+                                    <h5 data-label="Address" hidden>none</h5>
+                                    <h5 data-label="Blood" hidden>none</h5>
+                                    <h5 data-label="Father" hidden>none</h5>
+                                    <h5 data-label="Mother" hidden>none</h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);">
+                              <div class="member-view-box">
+                                <div class="member-image">
+                                  <img src="1.png" alt="Member" />
+                                  <div class="member-details">
+                                    <h5 data-label="Name">Member 1-7-2-2</h5>
+                                    <h5 data-label="Address" hidden>none</h5>
+                                    <h5 data-label="Blood" hidden>none</h5>
+                                    <h5 data-label="Father" hidden>none</h5>
+                                    <h5 data-label="Mother" hidden>none</h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);">
+                              <div class="member-view-box">
+                                <div class="member-image">
+                                  <img src="1.png" alt="Member" />
+                                  <div class="member-details">
+                                    <h5 data-label="Name">Member 1-7-2-3</h5>
+                                    <h5 data-label="Address" hidden>none</h5>
+                                    <h5 data-label="Blood" hidden>none</h5>
+                                    <h5 data-label="Father" hidden>none</h5>
+                                    <h5 data-label="Mother" hidden>none</h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
                         </ul>
-                    </li>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">Member 1-7-3</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
-            </li>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <div class="member-view-box">
+                    <div class="member-image">
+                      <img src="1.png" alt="Member" />
+                      <div class="member-details">
+                        <h5 data-label="Name">Member 2</h5>
+                        <h5 data-label="Address" hidden>none</h5>
+                        <h5 data-label="Blood" hidden>none</h5>
+                        <h5 data-label="Father" hidden>none</h5>
+                        <h5 data-label="Mother" hidden>none</h5>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">John Doe</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">John Doe</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <div class="member-view-box">
+                        <div class="member-image">
+                          <img src="1.png" alt="Member" />
+                          <div class="member-details">
+                            <h5 data-label="Name">John Doe</h5>
+                            <h5 data-label="Address" hidden>none</h5>
+                            <h5 data-label="Blood" hidden>none</h5>
+                            <h5 data-label="Father" hidden>none</h5>
+                            <h5 data-label="Mother" hidden>none</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <div class="member-view-box">
+                            <div class="member-image">
+                              <img src="1.png" alt="Member" />
+                              <div class="member-details">
+                                <h5 data-label="Name">John Doe</h5>
+                                <h5 data-label="Address" hidden>none</h5>
+                                <h5 data-label="Blood" hidden>none</h5>
+                                <h5 data-label="Father" hidden>none</h5>
+                                <h5 data-label="Mother" hidden>none</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
+      </div>
     </div>
-</div>
-    
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="script.js"></script>
 
-
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
