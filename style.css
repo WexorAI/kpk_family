@@ -8,7 +8,8 @@
     white-space: pre-line;
 }
 .member-details h5 {
-    font-size: .85rem;
+    font-size: .92rem;
+    color: #000;
 }
 /* .details{
     padding-top: 10px;
@@ -72,13 +73,13 @@
     position: absolute; 
   top: 0; 
   right: 50%;
-    border-top: 2px solid #ccc;
+    border-top: 2px solid #7a7777;;
     width: 50%; 
   height: 18px;
 }
 .genealogy-tree li::after{
     right: auto; left: 50%;
-    border-left: 2px solid #ccc;
+    border-left: 2px solid #7a7777;;
 }
 .genealogy-tree li:only-child::after, .genealogy-tree li:only-child::before {
     display: none;
@@ -90,7 +91,7 @@
     border: 0 none;
 }
 .genealogy-tree li:last-child::before{
-    border-right: 2px solid #ccc;
+    border-right: 2px solid #7a7777;;
     border-radius: 0 5px 0 0;
     -webkit-border-radius: 0 5px 0 0;
     -moz-border-radius: 0 5px 0 0;
@@ -103,7 +104,7 @@
 .genealogy-tree ul ul::before{
     content: '';
     position: absolute; top: 0; left: 50%;
-    border-left: 2px solid #ccc;
+    border-left: 2px solid #7a7777;;
     width: 0; height: 20px;
 }
 .genealogy-tree li a{
