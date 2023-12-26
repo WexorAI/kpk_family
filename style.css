@@ -22,6 +22,12 @@
     margin-bottom:0;
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
 /*----------------genealogy-scroll----------*/
 
 .genealogy-scroll::-webkit-scrollbar {
