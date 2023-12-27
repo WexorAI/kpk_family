@@ -23,10 +23,10 @@
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    background-color: #c2d8f3;
+    padding: 8px;
     text-align: center;
+    box-sizing: inherit;
 }
 /*----------------genealogy-scroll----------*/
 

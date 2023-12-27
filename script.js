@@ -52,14 +52,15 @@ $(document).ready(function () {
         // Extract details and populate the memberDetails object
         $(this).find('.member-details h5').each(function () {
             var detailLabel = $(this).data('label') || 'unknown'; // Use a data attribute for custom labels
-            var detailText = $(this).text();
+            var detailText = $(this).text().replace(/\n/g, ''); // Remove newline characters
             memberDetails[detailLabel] = detailText;
         });
+        console.log(memberDetails);
 
         // Generate HTML for the popup
-        var popupHTML = '<div class="member-details-popup">';
+        var popupHTML = '<div class="member-details-popup">';                                                                                                                                                                 
         for (var label in memberDetails) {
-            popupHTML += '<p class="card-text">' + label + ': ' + memberDetails[label] + '</p>';
+            popupHTML += '<p class="card-p"> <strong>' + label + ': </strong>' + memberDetails[label] + '</p>';
         }
         popupHTML += '</div>';
 
