@@ -17,10 +17,9 @@
     height: 4rem;
     background-color: aqua;
 } */
-.card-text{
-    margin: 0;
-    margin-bottom:0;
-}
+.card-p{
+    margin-bottom: 0%;
+  }
 
 body {
     margin: 0;
@@ -40,6 +39,39 @@ footer {
 .content {
     /* Add your content styles here */
     padding: 20px;
+}
+.main-card{
+    width: fit-content;
+    min-width: 12rem;
+    max-width: 18rem;
+    height: 12rem;
+    background-color: rgb(235 240 243 / 68%);
+    position: fixed;
+    z-index: 5;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-card{
+        min-width: 8rem;
+        max-width: 14rem;
+        height: 11rem;
+    }
+    .card-p{
+        font-size: smaller;
+      }
+      .card-title{
+        font-size: medium;
+      }
+      .member-details h5 {
+        font-size: .82rem;
+        color: #000;
+    }
+    footer{
+        height: 2rem;
+    }
+    footer p{
+        font-size: small;
+    }
 }
 /*----------------genealogy-scroll----------*/
 
